@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "my-command",
+      "identifier": "sketch-typings-test.my-command-identifier",
+      "shortcut": "ctrl shift t",
+      "script": "./my-command.ts"
+    }
+  ],
+  "menu": {
+    "title": "sketch-typings-test",
+    "items": [
+      "sketch-typings-test.my-command-identifier"
+    ]
+  }
+}

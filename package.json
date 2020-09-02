@@ -1,0 +1,34 @@
+{
+  "name": "sketch-typings-test",
+  "description": "",
+  "version": "0.1.0",
+  "engines": {
+    "sketch": ">=49.0"
+  },
+  "skpm": {
+    "name": "sketch-typings-test",
+    "manifest": "src/manifest.json",
+    "main": "sketch-typings-test.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ],
+    "sketch-assets-file": "sketch-assets/icons.sketch"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.7.0",
+    "@skpm/console": "^0.2.8",
+    "ts-loader": "^8.0.3",
+    "typescript": "^4.0.2"
+  },
+  "author": "Martin Heidegger <martin.heidegger@gmail.com>",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "sketch-typings": "file:../sketch-typings"
+  }
+}
